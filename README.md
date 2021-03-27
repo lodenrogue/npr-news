@@ -5,5 +5,5 @@ Get NPR news articles
 ### Usage:
 
 ```sh
-python npr-news.py 
+python npr_news.py 
 ```
