@@ -36,15 +36,3 @@ class NprLinkCollector:
             urls.append("{}{}".format(BASE_URL, link["href"]))
 
         return urls
-
-
-if __name__ == "__main__":
-    articles = NprNews().get_articles(10)
-    
-    for article in articles:
-        print("=====================================")
-        print("Title:", article.title)
-        print(article.snippet)
-        print(article.url)
-        print("=====================================")
-        print()
