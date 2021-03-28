@@ -1,4 +1,4 @@
-from news_extractor import NewsExtractor
+from extractor.news_extractor import NewsExtractor
 from npr_link_collector import NprLinkCollector
 from npr_content_extractor import NprContentExtractor
 

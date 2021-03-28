@@ -1,6 +1,4 @@
 from model.article import Article
-from npr_link_collector import NprLinkCollector
-from npr_content_extractor import NprContentExtractor
 
 class NewsExtractor:
     

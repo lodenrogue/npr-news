@@ -20,17 +20,17 @@ class NprContentExtractor:
         if text is None:
             return ""
         
-        text = self._clean_text(text)
-        if len(text) < SNIPPET_LENGTH:
-            return text
-
-        return text[0:SNIPPET_LENGTH].rstrip() + "..."
+        cleaned = self._clean_text(text)
+        if len(cleaned) < SNIPPET_LENGTH:
+            return cleaned
+       
+        return cleaned[0 : SNIPPET_LENGTH].rstrip() + "..."
 
 
     def _clean_text(self, text):
         result = ""
         for line in text.split('\n'):
-            if not line.startswith(NPR_PREFIX):
-                result += line.replace("\n", " ")
+            if not line.startswith(NPR_PREFIX) and len(line) > 0:
+                result += line + " "
        
         return result        
