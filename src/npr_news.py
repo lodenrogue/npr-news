@@ -11,7 +11,7 @@ class NprNews():
 
 
 if __name__ == "__main__":
-    articles = NewsExtractor(NprLinkCollector(), NprContentExtractor()).extract(10)
+    articles = NprNews().get_articles(5) 
 
     for article in articles:
         print("=====================================")
