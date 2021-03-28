@@ -2,7 +2,7 @@ import unittest
 from npr_news import NprNews
 import json
 
-class NprNewstest(unittest.TestCase):
+class NprNewsTest(unittest.TestCase):
 
     def test_returns_correct_article_count(self):
         count = 3
